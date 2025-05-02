@@ -11,6 +11,7 @@
 
         public function index() {
             return view('home.homepage');
+            //return view('welcome');
         }
 
     }
