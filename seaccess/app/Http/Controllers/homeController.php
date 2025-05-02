@@ -14,6 +14,17 @@
             //return view('welcome');
         }
 
+        public function redirect() {
+            $usertype = Auth::user()->usertype;
+
+
+            if ($usertype == 0) {
+                return view('admin.home');
+            } else {
+                return view('dashboard');
+            }
+        }
+
     }
 
 
